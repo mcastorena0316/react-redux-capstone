@@ -1,0 +1,15 @@
+
+.launches-list {
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap
+}
+
+.launches-list img {
+    width: 256px;
+    height: 256px;
+}
+
+.launch {
+    flex: 1 0 21%;
+}
