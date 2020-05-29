@@ -7,7 +7,7 @@ import {
 const Header = () => (
   <div className="header">
     <ul>
-      <Link to="/missionlist"><li>Missions</li></Link>
+      <Link to="/"><li>Missions</li></Link>
     </ul>
     <ul />
   </div>

@@ -56,7 +56,7 @@ class Mission extends Component {
           {mission.launch_site && (
           <li>
             Launch site:
-            {mission.launch_site.site_name}
+            {mission.launch_site.site_name_long}
           </li>
           )}
 
@@ -127,7 +127,7 @@ Mission.propTypes = {
       wikipedia: PropTypes.string,
     }),
     launch_site: PropTypes.shape({
-      site_name: PropTypes.string,
+      site_name_long: PropTypes.string,
     }),
     rocket: PropTypes.shape({
       rocket_name: PropTypes.string,

@@ -16,7 +16,7 @@ function App() {
         <Header />
       </div>
       <Switch>
-        <Route path="/missionlist" component={MissionList} />
+        <Route path="/" exact component={MissionList} />
         <Route path="/mission/:id" component={Mission} />
       </Switch>
     </Router>

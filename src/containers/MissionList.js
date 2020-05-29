@@ -8,6 +8,7 @@ import { fetchData, filterSuccess } from '../actions/index';
 import './MissionList.css';
 import LaunchFilter from '../components/LaunchFilter';
 
+let targetId;
 
 class MissionList extends Component {
   constructor(props) {
@@ -24,8 +25,34 @@ class MissionList extends Component {
 
   handleChange(e) {
     const { filterSuccess } = this.props;
+    targetId = e.target.id;
     const filter = e.target.value;
     filterSuccess(filter);
+  }
+
+  // eslint-disable-next-line class-methods-use-this
+  filterDefine(mission, parameter) {
+    let total;
+    switch (parameter) {
+      case mission.launch_success:
+        if (mission.launch_success === false) {
+          total = 'No';
+        } else if (mission.launch_success === true) {
+          total = 'Yes';
+        } else {
+          total = 'Pending';
+        }
+        return total;
+      case mission.launch_year:
+        total = mission.launch_year;
+        return total;
+      case mission.launch_site.site_name_long:
+        total = mission.launch_site.site_name_long;
+        return total;
+      default:
+        total = 'All';
+        return total;
+    }
   }
 
 
@@ -33,18 +60,25 @@ class MissionList extends Component {
     const { missions } = this.props;
     const { filter } = this.props;
     let total;
-    const filtered = filter === 'All' ? missions : missions.filter(mission => {
-      if (mission.launch_success === false) {
-        total = 'No';
-      } else if (mission.launch_success === true) {
-        total = 'Yes';
-      } else {
-        total = 'Pending';
-      }
-      return (
-        total === filter);
-    });
-
+    let filtered = [];
+    if (filter === 'All') {
+      filtered = missions;
+    } else {
+      filtered = missions.filter(mission => {
+        if (targetId === 'sucess') {
+          total = this.filterDefine(mission, mission.launch_success);
+        } else if (targetId === 'Date') {
+          total = this.filterDefine(mission, mission.launch_year);
+        } else {
+          (
+            total = this.filterDefine(mission, mission.launch_site.site_name_long)
+          );
+        }
+        return (
+          total === filter
+        );
+      });
+    }
 
     return (
       <div className="launches-div">

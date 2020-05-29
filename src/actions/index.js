@@ -30,9 +30,7 @@ export const fetchOneMission = id => dispatch => axios.get(`${apiUrl}/${id}`)
     throw (error);
   });
 
-export const filterSuccess = success => {
-  return ({
-    type: SUCCESS_FILTER,
-    payload: success,
-  });
-};
+export const filterSuccess = success => ({
+  type: SUCCESS_FILTER,
+  payload: success,
+});
