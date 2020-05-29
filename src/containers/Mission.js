@@ -18,10 +18,20 @@ class Mission extends Component {
     fetchOneMission(ID);
   }
 
+  convertUrl() {
+    let urlEmbed2;
+    const { mission } = this.props;
+    if (mission.links) {
+      const urlVideo = mission.links.video_link;
+      const urlEmbed = urlVideo.replace('watch?', 'embed/');
+      urlEmbed2 = urlEmbed.replace('v=', '');
+    }
+    return (urlEmbed2);
+  }
+
   render() {
     const { mission } = this.props;
     console.log(mission);
-
     return (
       <div className="mission-div">
         <ul>
@@ -45,9 +55,50 @@ class Mission extends Component {
             Launch Date:
             { mission.launch_date_utc}
           </li>
+          {mission.launch_site && (
+          <li>
+            Launch site:
+            {mission.launch_site.site_name}
+          </li>
+          )}
+
+          {mission.rocket && (
+          <li>
+            Rocket name:
+            {mission.rocket.rocket_name}
+          </li>
+          )}
+          {mission.rocket && (
+          <li>
+            Rocket type:
+            {mission.rocket.rocket_type}
+          </li>
+          )}
+
           {mission.launch_sucess && <li>Launch sucess : yes</li> }
           {!mission.launch_sucess && <li>Launch sucess : no</li> }
+          {mission.launch_failure_details && (
+          <li>
+            Reasons of failure:
+            {mission.launch_failure_details.reason}
+          </li>
+          ) }
 
+          {mission.links && (
+          <li>
+            More information:
+            <a target="_blank" rel="noreferrer" href={mission.links.wikipedia}>{mission.links.wikipedia}</a>
+          </li>
+          )}
+          {mission.links && (
+          <iframe
+            id="inlineFrameExample"
+            title="Inline Frame Example"
+            width="300"
+            height="200"
+            src={this.convertUrl()}
+          />
+          )}
 
         </ul>
 
@@ -56,6 +107,7 @@ class Mission extends Component {
     );
   }
 }
+
 
 Mission.propTypes = {
   fetchOneMission: PropTypes.func,
@@ -70,6 +122,20 @@ Mission.propTypes = {
     launch_date_utc: PropTypes.string,
     mission_name: PropTypes.string,
     launch_sucess: PropTypes.string,
+    links: PropTypes.shape({
+      video_link: PropTypes.string,
+      wikipedia: PropTypes.string,
+    }),
+    launch_site: PropTypes.shape({
+      site_name: PropTypes.string,
+    }),
+    rocket: PropTypes.shape({
+      rocket_name: PropTypes.string,
+      rocket_type: PropTypes.string,
+    }),
+    launch_failure_details: PropTypes.shape({
+      reason: PropTypes.string,
+    }),
 
   }),
 

@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import filterReducer from './filter';
+import fetchedReducer from './fetchedReducer';
 import missionReducer from './missionReducer';
 
 export default combineReducers({
-  filter: filterReducer,
+  launches: fetchedReducer,
   mission: missionReducer,
 });

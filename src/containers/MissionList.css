@@ -13,3 +13,17 @@
 .launch {
     flex: 1 0 21%;
 }
+
+.launch-buttondiv {
+    text-align:center;
+    margin: 12px 0;
+}
+
+.launch-buttondiv a button {
+    background-color: transparent;
+    border: none; 
+}
+
+.launch-title {
+    text-align: center;
+}

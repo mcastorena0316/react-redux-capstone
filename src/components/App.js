@@ -6,7 +6,7 @@ import {
   Route,
 } from 'react-router-dom';
 import MissionList from '../containers/MissionList';
-import Mission from './Mission';
+import Mission from '../containers/Mission';
 import Header from './Header';
 
 function App() {

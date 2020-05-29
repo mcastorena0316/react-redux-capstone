@@ -26,7 +26,7 @@ class MissionList extends Component {
               key={mission.mission_name}
               className="launch"
             >
-              <div>
+              <div className="launch-buttondiv">
                 <Link to={`mission/${mission.flight_number}`}>
                   <button type="button">
                     {mission.links.mission_patch_small
@@ -35,7 +35,7 @@ class MissionList extends Component {
                   </button>
                 </Link>
               </div>
-              <div>
+              <div className="launch-title">
                 {mission.mission_name}
               </div>
             </li>
@@ -48,7 +48,7 @@ class MissionList extends Component {
 
 function mapStateToProps(state) {
   return {
-    missions: state.filter,
+    missions: state.launches,
   };
 }
 
