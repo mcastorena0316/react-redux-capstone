@@ -19,19 +19,17 @@ class Mission extends Component {
   }
 
   convertUrl() {
-    let urlEmbed2;
+    let urlVideo;
     const { mission } = this.props;
     if (mission.links) {
-      const urlVideo = mission.links.video_link;
-      const urlEmbed = urlVideo.replace('watch?', 'embed/');
-      urlEmbed2 = urlEmbed.replace('v=', '');
+      urlVideo = mission.links.youtube_id;
     }
-    return (urlEmbed2);
+    return (urlVideo);
   }
+
 
   render() {
     const { mission } = this.props;
-    console.log(mission);
     return (
       <div className="mission-div">
         <ul>
@@ -75,8 +73,10 @@ class Mission extends Component {
           </li>
           )}
 
-          {mission.launch_sucess && <li>Launch sucess : yes</li> }
-          {!mission.launch_sucess && <li>Launch sucess : no</li> }
+          {mission.launch_success && <li>Launch sucess : yes</li> }
+          {mission.launch_success === false && <li>Launch sucess : no</li> }
+          {mission.launch_success === null && <li>Launch sucess : Pending</li> }
+
           {mission.launch_failure_details && (
           <li>
             Reasons of failure:
@@ -87,16 +87,16 @@ class Mission extends Component {
           {mission.links && (
           <li>
             More information:
-            <a target="_blank" rel="noreferrer" href={mission.links.wikipedia}>{mission.links.wikipedia}</a>
+            <a target="_blank" rel="noopener noreferrer" href={mission.links.wikipedia}>{mission.links.wikipedia}</a>
           </li>
           )}
-          {mission.links && (
+          { mission.links && (
           <iframe
             id="inlineFrameExample"
             title="Inline Frame Example"
             width="300"
             height="200"
-            src={this.convertUrl()}
+            src={(this.convertUrl() === undefined || this.convertUrl() === null) ? 'https://www.youtube.com/embed/_yDZY5_u8FQ' : `https://www.youtube.com/embed/${this.convertUrl()}`}
           />
           )}
 
@@ -121,9 +121,9 @@ Mission.propTypes = {
     launch_year: PropTypes.string,
     launch_date_utc: PropTypes.string,
     mission_name: PropTypes.string,
-    launch_sucess: PropTypes.string,
+    launch_success: PropTypes.bool,
     links: PropTypes.shape({
-      video_link: PropTypes.string,
+      youtube_id: PropTypes.string,
       wikipedia: PropTypes.string,
     }),
     launch_site: PropTypes.shape({

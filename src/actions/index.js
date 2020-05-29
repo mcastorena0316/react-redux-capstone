@@ -2,6 +2,7 @@ import axios from 'axios';
 
 export const ADD_FETCHED_DATA = 'ADD FETCHED DATA';
 export const DISPLAY_FETCHED_DATA = 'DISPLAY FETCHED DATA';
+export const SUCCESS_FILTER = 'SUCESS FILTER';
 
 const apiUrl = 'https://api.spacexdata.com/v3/launches';
 
@@ -28,3 +29,10 @@ export const fetchOneMission = id => dispatch => axios.get(`${apiUrl}/${id}`)
   .catch(error => {
     throw (error);
   });
+
+export const filterSuccess = success => {
+  return ({
+    type: SUCCESS_FILTER,
+    payload: success,
+  });
+};
