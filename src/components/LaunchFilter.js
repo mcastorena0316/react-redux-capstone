@@ -1,10 +1,11 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import './Header.css';
+import './LaunchFilter.css';
 
 const sucess = ['All', 'Yes', 'No', 'Pending'];
-const date = ['All', '2020', '2017', '2016', '2015', '2014', '2013', '2012', '2010', '2009', '2008', '2007', '2006'];
+const date = ['All', '2020', '2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2010', '2009', '2008', '2007', '2006'];
 const location = ['All',
   'Vandenberg Air Force Base Space Launch Complex 4E',
   'Kwajalein Atoll Omelek Island',
@@ -12,53 +13,58 @@ const location = ['All',
   'Kennedy Space Center Historic Launch Complex 39A'];
 
 const LaunchFilter = ({ filter = 'All', handleChange }) => (
-  <div>
 
-    <span>LAUNCH SUCESS: </span>
-    <select
-      id="sucess"
-      onChange={handleChange}
-      value={filter}
-    >
-      {sucess.map(x => (
-        <option
-          key={Math.random()}
-          value={x}
-        >
-          {x}
-        </option>
-      ))}
-    </select>
-    <span>SELECT DATE: </span>
-    <select
-      id="Date"
-      onChange={handleChange}
-      value={filter}
-    >
-      {date.map(x => (
-        <option
-          key={Math.random()}
-          value={x}
-        >
-          {x}
-        </option>
-      ))}
-    </select>
-    <span>SELECT LAUNCH LOCATION: </span>
-    <select
-      id="Location"
-      onChange={handleChange}
-      value={filter}
-    >
-      {location.map(x => (
-        <option
-          key={Math.random()}
-          value={x}
-        >
-          {x}
-        </option>
-      ))}
-    </select>
+  <div className="filter-div">
+    <div className="success-div">
+      <span>FILTER BY:</span>
+      <span>LAUNCH SUCCESS: </span>
+      <select
+        id="sucess"
+        onChange={handleChange}
+        value={filter}
+      >
+        {sucess.map(x => (
+          <option
+            key={Math.random()}
+            value={x}
+          >
+            {x}
+          </option>
+        ))}
+      </select>
+
+      <span>YEAR: </span>
+      <select
+        id="Date"
+        onChange={handleChange}
+        value={filter}
+      >
+        {date.map(x => (
+          <option
+            key={Math.random()}
+            value={x}
+          >
+            {x}
+          </option>
+        ))}
+      </select>
+      <span>LAUNCH LOCATION: </span>
+      <select
+        id="Location"
+        onChange={handleChange}
+        value={filter}
+        className="location"
+      >
+        {location.map(x => (
+          <option
+            key={Math.random()}
+            value={x}
+          >
+            {x}
+          </option>
+        ))}
+      </select>
+    </div>
   </div>
 );
 

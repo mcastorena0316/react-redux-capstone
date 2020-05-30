@@ -1,0 +1,21 @@
+.filter-div {
+    text-align:center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.success-div h4 {
+    text-align: center;
+}
+
+.success-div select {
+    height: 28px;
+    border-radius: 5px;
+}
+
+.success-div .location {
+    max-width: 119px;
+    overflow: hidden
+}

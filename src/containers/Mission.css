@@ -1,0 +1,17 @@
+body {
+    background-image: url('../images/background3.jpg');
+    background-color: white;
+    background-blend-mode: luminosity; 
+ }
+
+.mission-div {
+    color:white;
+}
+
+.mission-div h2 {
+    text-align: center;
+}
+
+.mission-data {
+    list-style: none;
+}

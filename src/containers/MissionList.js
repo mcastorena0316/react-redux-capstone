@@ -97,7 +97,7 @@ class MissionList extends Component {
                   <button type="button">
                     {mission.links.mission_patch_small
               && <img src={mission.links.mission_patch_small} alt={mission.mission_name} />}
-                    {!mission.links.mission_patch_small && <img src="https://cdn.dribbble.com/users/610788/screenshots/5157282/spacex.png" alt={mission.mission_name} />}
+                    {!mission.links.mission_patch_small && <img src="rocket.png" alt={mission.mission_name} />}
                   </button>
                 </Link>
               </div>

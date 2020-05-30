@@ -1,8 +1,10 @@
-
+.launches-div {
+    color:white;
+}
 .launches-list {
     list-style: none;
     display:flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .launches-list img {

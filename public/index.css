@@ -1,0 +1,5 @@
+body {
+    background-image: url('background.jpg');
+    background-color: white;
+    background-blend-mode: luminosity;
+}

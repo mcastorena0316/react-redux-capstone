@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { fetchOneMission } from '../actions/index';
+import './Mission.css';
 
 
 class Mission extends Component {
@@ -32,12 +33,15 @@ class Mission extends Component {
     const { mission } = this.props;
     return (
       <div className="mission-div">
-        <ul>
-          <li>
-            {' '}
-            Name:
-            { mission.mission_name}
-          </li>
+
+        {mission.mission_name && (
+        <h2>
+          { mission.mission_name.toUpperCase()}
+          {' '}
+        </h2>
+        )}
+
+        <ul className="mission-data">
           <li>
             {' '}
             Details:
@@ -48,11 +52,14 @@ class Mission extends Component {
             Launch Year:
             { mission.launch_year}
           </li>
+
+          {mission.launch_date_utc && (
           <li>
-            {' '}
             Launch Date:
-            { mission.launch_date_utc}
+            {mission.launch_date_utc.slice(0, mission.launch_date_utc.indexOf('T'))}
           </li>
+          )}
+
           {mission.launch_site && (
           <li>
             Launch site:
