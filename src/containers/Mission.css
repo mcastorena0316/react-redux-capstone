@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap');
 
 body {
     background-image: url('../images/background3.jpg');
@@ -7,22 +8,55 @@ body {
  }
 
 .mission-div {
-    color:white;
-    font-family: 'Poppins', sans-serif;
+    color: #d3d8de;
+    font-family: 'Muli', sans-serif;
 }
 
 .mission-div h2 {
     text-align: center;
     letter-spacing: 1.5px;
+    font-size: 1.8em;
+    margin-bottom: 0;
+}
+
+.mission-info-div {
+    display:flex;
 }
 
 .mission-data {
     list-style: none;
     font-size:1.2em;
-    text-align: center;
     padding: 0;
+    width:50%;
+    padding-left:8px;
+}
+
+.mission-data li {
+    padding:8px;
+    word-break: break-all;
 }
 
 .mission-data li span {
     padding-right: 8px;
+    color: rgb(243, 190, 44);
+}
+
+
+.mission-data li a:visited {
+    color: #d3d8de;
+}
+
+.mission-data li a p{
+    margin:0;
+}
+
+.video-div {
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-div iframe {
+    border: none;
 }

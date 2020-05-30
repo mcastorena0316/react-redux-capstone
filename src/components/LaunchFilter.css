@@ -19,9 +19,14 @@
     height: 28px;
     border-radius: 5px;
     font-size: 16px;
+    background-color:#dcf5fc;
 }
 
 .filter-div .location-div  select {
     max-width: 137px;
     overflow: hidden
+}
+
+.year-div select {
+    min-width: 60px;
 }

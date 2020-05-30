@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap');
+
 .launches-div {
     color:white;
+    font-family: 'Poppins', sans-serif;
 }
 .launches-list {
     list-style: none;
     display:flex;
     flex-wrap: wrap;
+    padding:0;
 }
 
 .launches-list img {
@@ -28,4 +32,6 @@
 
 .launch-title {
     text-align: center;
+    font-size: 1.8em;
+    color: rgb(243, 190, 44);
 }

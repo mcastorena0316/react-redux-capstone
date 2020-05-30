@@ -19,7 +19,6 @@ function App() {
       <Switch>
         <Route path="/" exact component={MissionList} />
         <Route path="/about" exact component={About} />
-
         <Route path="/mission/:id" component={Mission} />
       </Switch>
     </Router>

@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap');
+
+
+footer {
+    background-color: #011b35;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Muli', sans-serif;
+    font-size:1em;
+}

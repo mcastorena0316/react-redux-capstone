@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { fetchOneMission } from '../actions/index';
+import Footer from '../components/Footer';
 import './Mission.css';
-
 
 class Mission extends Component {
   constructor(props) {
@@ -39,89 +39,92 @@ class Mission extends Component {
           { mission.mission_name.toUpperCase()}
         </h2>
         )}
-        <ul className="mission-data">
-          <li>
-            <span>Details:</span>
-            { mission.details}
-          </li>
-          <li>
-            <span>Launch Year:</span>
-            { mission.launch_year}
-          </li>
+        <div className="mission-info-div">
+          <ul className="mission-data">
+            <li>
+              <span>Details:</span>
+              { mission.details}
+            </li>
+            <li>
+              <span>Launch Year:</span>
+              { mission.launch_year}
+            </li>
 
-          {mission.launch_date_utc && (
-          <li>
-            <span>Launch Date:</span>
-            {mission.launch_date_utc.slice(0, mission.launch_date_utc.indexOf('T'))}
-          </li>
-          )}
-          {mission.launch_site && (
-          <li>
-            <span>Launch site:</span>
-            {mission.launch_site.site_name_long}
-          </li>
-          )}
+            {mission.launch_date_utc && (
+            <li>
+              <span>Launch Date:</span>
+              {mission.launch_date_utc.slice(0, mission.launch_date_utc.indexOf('T'))}
+            </li>
+            )}
+            {mission.launch_site && (
+            <li>
+              <span>Launch site:</span>
+              {mission.launch_site.site_name_long}
+            </li>
+            )}
 
-          {mission.rocket && (
-          <li>
-            <span>Rocket name:</span>
-            {mission.rocket.rocket_name}
-          </li>
-          )}
-          {mission.rocket && (
-          <li>
-            <span>Rocket type:</span>
-            {mission.rocket.rocket_type}
-          </li>
-          )}
-          {mission.launch_success && (
-          <li>
-            <span>Launch sucess:</span>
-            {' '}
-            yes
-          </li>
-          ) }
-          {mission.launch_success === false && (
-          <li>
-            <span>Launch sucess:</span>
-            {' '}
-            no
-          </li>
-          ) }
-          {mission.launch_success === null && (
-          <li>
-            <span>Launch sucess:</span>
-            {' '}
-            Pending
-          </li>
-          ) }
+            {mission.rocket && (
+            <li>
+              <span>Rocket name:</span>
+              {mission.rocket.rocket_name}
+            </li>
+            )}
+            {mission.rocket && (
+            <li>
+              <span>Rocket type:</span>
+              {mission.rocket.rocket_type}
+            </li>
+            )}
+            {mission.launch_success && (
+            <li>
+              <span>Launch sucess:</span>
+              {' '}
+              yes
+            </li>
+            ) }
+            {mission.launch_success === false && (
+            <li>
+              <span>Launch sucess:</span>
+              {' '}
+              no
+            </li>
+            ) }
+            {mission.launch_success === null && (
+            <li>
+              <span>Launch sucess:</span>
+              {' '}
+              Pending
+            </li>
+            ) }
 
-          {mission.launch_failure_details && (
-          <li>
-            <span>Reasons of failure:</span>
-            {mission.launch_failure_details.reason}
-          </li>
-          ) }
+            {mission.launch_failure_details && (
+            <li>
+              <span>Reasons of failure:</span>
+              {mission.launch_failure_details.reason}
+            </li>
+            ) }
 
-          {mission.links && (
-          <li>
-            <span>More information:</span>
-            <a target="_blank" rel="noopener noreferrer" href={mission.links.wikipedia}>{mission.links.wikipedia}</a>
-          </li>
-          )}
-          { mission.links && (
-          <iframe
-            id="inlineFrameExample"
-            title="Inline Frame Example"
-            width="300"
-            height="200"
-            src={(this.convertUrl() === undefined || this.convertUrl() === null) ? 'https://www.youtube.com/embed/_yDZY5_u8FQ' : `https://www.youtube.com/embed/${this.convertUrl()}`}
-          />
-          )}
+            {mission.links && (
+            <li>
+              <span>More information:</span>
+              <a target="_blank" rel="noopener noreferrer" href={mission.links.wikipedia}><p>{mission.links.wikipedia}</p></a>
+            </li>
+            )}
 
-        </ul>
-
-
+          </ul>
+          <div className="video-div">
+            { mission.links && (
+            <iframe
+              id="SpaceX Video"
+              title="Inline Frame Example"
+              width="90%"
+              height="60%"
+              src={(this.convertUrl() === undefined || this.convertUrl() === null) ? 'https://www.youtube.com/embed/_yDZY5_u8FQ' : `https://www.youtube.com/embed/${this.convertUrl()}`}
+            />
+            )}
+          </div>
+        </div>
+        <Footer />
       </div>
     );
   }
