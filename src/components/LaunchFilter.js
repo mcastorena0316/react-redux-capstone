@@ -74,7 +74,6 @@ const LaunchFilter = ({ filter = 'All', handleChange }) => (
 
 LaunchFilter.propTypes = {
   handleChange: PropTypes.func,
-
   filter: PropTypes.string,
 };
 
@@ -82,6 +81,5 @@ LaunchFilter.defaultProps = {
   handleChange: () => { },
   filter: '',
 };
-
 
 export default LaunchFilter;

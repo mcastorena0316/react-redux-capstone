@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap');
 
 body {
     background-image: url('../images/background3.jpg');
@@ -41,6 +40,9 @@ body {
     color: rgb(243, 190, 44);
 }
 
+.mission-data li a {
+    color: #d3d8de;
+}
 
 .mission-data li a:visited {
     color: #d3d8de;

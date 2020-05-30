@@ -47,6 +47,8 @@ header {
 
 .route-div a p:visited {
     color:white;
-  
 }
 
+.route-div a p:hover {
+    color: rgb(243, 190, 44);
+}

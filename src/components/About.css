@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap');
+
 .about-div {
-    color:white;
+    color:#d3d8de;
+    font-family: 'Muli', sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.about-div h2{
+    margin-bottom:0;
+}
+
+.about-div p {
+    margin:5px 0;
+
+}
+
+.about-div p a {
+color: #d3d8de
+}
+
+.about-div ul {
+    width:40%;
+    margin-top:5px;
+    list-style: none;
+}
+
+
+.about-div ul li::before {
+    content: "\2023";  
+    color: rgb(243, 190, 44);
+    font-weight: bold; 
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em
 }

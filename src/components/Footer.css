@@ -4,7 +4,11 @@
 footer {
     background-color: #011b35;
     text-align: center;
-    padding: 5px;
     font-family: 'Muli', sans-serif;
     font-size:1em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%
+
 }

@@ -41,10 +41,18 @@ class Mission extends Component {
         )}
         <div className="mission-info-div">
           <ul className="mission-data">
+
+
+            {mission.details && (
             <li>
+              {' '}
               <span>Details:</span>
-              { mission.details}
+              {' '}
+              {mission.details}
+              {' '}
             </li>
+            )}
+
             <li>
               <span>Launch Year:</span>
               { mission.launch_year}
@@ -107,7 +115,7 @@ class Mission extends Component {
             {mission.links && (
             <li>
               <span>More information:</span>
-              <a target="_blank" rel="noopener noreferrer" href={mission.links.wikipedia}><p>{mission.links.wikipedia}</p></a>
+              <a target="_blank" rel="noopener noreferrer" href={mission.links.wikipedia}>{mission.links.wikipedia}</a>
             </li>
             )}
 
@@ -117,8 +125,8 @@ class Mission extends Component {
             <iframe
               id="SpaceX Video"
               title="Inline Frame Example"
-              width="90%"
-              height="60%"
+              width="75%"
+              height="70%"
               src={(this.convertUrl() === undefined || this.convertUrl() === null) ? 'https://www.youtube.com/embed/_yDZY5_u8FQ' : `https://www.youtube.com/embed/${this.convertUrl()}`}
             />
             )}
