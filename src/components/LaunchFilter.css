@@ -6,27 +6,47 @@
     justify-content: space-around;
     font-family: 'Muli', sans-serif;
     margin-top:1em;
-    font-size: 1.2em;
+    font-size: 1.5vw;
     align-items: center;
 }
 
 .filter-div .filter-by {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.6vw;
 }
 
 .filter-div div select {
-    height: 28px;
+    height: 4vh;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1.4vw;
     background-color:#dcf5fc;
 }
 
 .filter-div .location-div  select {
-    max-width: 137px;
+    max-width: 12vw;
     overflow: hidden
 }
 
 .year-div select {
     min-width: 60px;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .filter-div {
+        flex-direction: column;
+    }
+
+    .filter-div div {
+        width:50%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3px
+    }
+
+    .filter-div div select {
+        width: 20vw;
+        height: 4vh
+    }
+}
+

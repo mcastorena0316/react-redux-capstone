@@ -6,28 +6,35 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #011b35;
-    padding-bottom: 10px;
+    padding-bottom: 1vh;
 }
 
 .logo-div {
     display:flex;
     font-family: 'Poppins', sans-serif;
+    width:50%;
+    align-items: center
 }
 
 .logo-div img {
-    max-width:100px;
-    max-height:100px;
+    max-width:16%;
+    height:auto;
     margin-left: 10px
 }
 
 .logo-div h1{
     margin-left: 0.5rem;
     color:rgb(243, 190, 44);
+    font-size: 2.6vw;
+    margin:0;
 }
 
 .route-div {
     display:flex;
     word-break: break-all;
+    align-items: center;
+    width: 50%;
+    justify-content: flex-end;
 }
 
 .route-div a{
@@ -37,7 +44,7 @@ header {
 .route-div a p {
     margin-right: 1em;
     color:#d3d8de;
-    font-size: 1.4em;
+    font-size: 1.8vw;
     text-decoration-line: none;
     font-family: 'Muli', sans-serif;  
     font-weight: bold;
@@ -52,3 +59,4 @@ header {
 .route-div a p:hover {
     color: rgb(243, 190, 44);
 }
+

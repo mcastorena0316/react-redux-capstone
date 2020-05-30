@@ -3,12 +3,14 @@
 
 footer {
     background-color: #011b35;
-    text-align: center;
     font-family: 'Muli', sans-serif;
-    font-size:1em;
+    font-size: 1.vw;
     position: fixed;
     left: 0;
     bottom: 0;
-    width:100%
-
+    width:100%;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }

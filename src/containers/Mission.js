@@ -126,7 +126,7 @@ class Mission extends Component {
               id="SpaceX Video"
               title="Inline Frame Example"
               width="75%"
-              height="70%"
+              height="60%"
               src={(this.convertUrl() === undefined || this.convertUrl() === null) ? 'https://www.youtube.com/embed/_yDZY5_u8FQ' : `https://www.youtube.com/embed/${this.convertUrl()}`}
             />
             )}

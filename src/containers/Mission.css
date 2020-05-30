@@ -14,7 +14,7 @@ body {
 .mission-div h2 {
     text-align: center;
     letter-spacing: 1.5px;
-    font-size: 1.8em;
+    font-size: 2.8vw;
     margin-bottom: 0;
 }
 
@@ -24,7 +24,7 @@ body {
 
 .mission-data {
     list-style: none;
-    font-size:1.2em;
+    font-size:1.9vw;
     padding: 0;
     width:50%;
     padding-left:8px;
@@ -32,7 +32,7 @@ body {
 
 .mission-data li {
     padding:8px;
-    word-break: break-all;
+   
 }
 
 .mission-data li span {
@@ -42,14 +42,11 @@ body {
 
 .mission-data li a {
     color: #d3d8de;
+    word-break: break-all;
 }
 
 .mission-data li a:visited {
     color: #d3d8de;
-}
-
-.mission-data li a p{
-    margin:0;
 }
 
 .video-div {
@@ -61,4 +58,20 @@ body {
 
 .video-div iframe {
     border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .mission-info-div {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    .mission-data {
+        width:100%;
+        column-count: 2;
+    }   
+
+    .video-div {
+        width:100%
+    }
 }

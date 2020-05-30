@@ -9,20 +9,21 @@
     display:flex;
     flex-wrap: wrap;
     padding:0;
+    justify-content: center;
 }
 
 .launches-list img {
-    width: 256px;
-    height: 256px;
+    width: 100%;
+    height:auto;
+
 }
 
 .launch {
-    flex: 1 0 21%;
+    width:25%;
 }
 
 .launch-buttondiv {
     text-align:center;
-    margin: 12px 0;
 }
 
 .launch-buttondiv a button {
@@ -39,6 +40,8 @@
 
 .launch-title {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 2.1vw;
     color: rgb(243, 190, 44);
+    word-break: break-all;
+    margin: 2px 1px;
 }
