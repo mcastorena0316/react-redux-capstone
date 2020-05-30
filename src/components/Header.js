@@ -13,6 +13,8 @@ const Header = () => (
     </div>
     <div className="route-div">
       <Link to="/"><p>MISSIONS</p></Link>
+      <Link to="/about"><p>ABOUT</p></Link>
+
     </div>
   </header>
 );

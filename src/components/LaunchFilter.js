@@ -15,8 +15,8 @@ const location = ['All',
 const LaunchFilter = ({ filter = 'All', handleChange }) => (
 
   <div className="filter-div">
+    <span className="filter-by">FILTER BY:</span>
     <div className="success-div">
-      <span>FILTER BY:</span>
       <span>LAUNCH SUCCESS: </span>
       <select
         id="sucess"
@@ -32,7 +32,8 @@ const LaunchFilter = ({ filter = 'All', handleChange }) => (
           </option>
         ))}
       </select>
-
+    </div>
+    <div className="year-div">
       <span>YEAR: </span>
       <select
         id="Date"
@@ -48,6 +49,8 @@ const LaunchFilter = ({ filter = 'All', handleChange }) => (
           </option>
         ))}
       </select>
+    </div>
+    <div className="location-div">
       <span>LAUNCH LOCATION: </span>
       <select
         id="Location"

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap');
+
 body {
     background-image: url('../images/background3.jpg');
     background-color: white;
@@ -6,12 +8,21 @@ body {
 
 .mission-div {
     color:white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .mission-div h2 {
     text-align: center;
+    letter-spacing: 1.5px;
 }
 
 .mission-data {
     list-style: none;
+    font-size:1.2em;
+    text-align: center;
+    padding: 0;
+}
+
+.mission-data li span {
+    padding-right: 8px;
 }

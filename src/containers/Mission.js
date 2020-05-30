@@ -37,63 +37,75 @@ class Mission extends Component {
         {mission.mission_name && (
         <h2>
           { mission.mission_name.toUpperCase()}
-          {' '}
         </h2>
         )}
-
         <ul className="mission-data">
           <li>
-            {' '}
-            Details:
+            <span>Details:</span>
             { mission.details}
           </li>
           <li>
-            {' '}
-            Launch Year:
+            <span>Launch Year:</span>
             { mission.launch_year}
           </li>
 
           {mission.launch_date_utc && (
           <li>
-            Launch Date:
+            <span>Launch Date:</span>
             {mission.launch_date_utc.slice(0, mission.launch_date_utc.indexOf('T'))}
           </li>
           )}
-
           {mission.launch_site && (
           <li>
-            Launch site:
+            <span>Launch site:</span>
             {mission.launch_site.site_name_long}
           </li>
           )}
 
           {mission.rocket && (
           <li>
-            Rocket name:
+            <span>Rocket name:</span>
             {mission.rocket.rocket_name}
           </li>
           )}
           {mission.rocket && (
           <li>
-            Rocket type:
+            <span>Rocket type:</span>
             {mission.rocket.rocket_type}
           </li>
           )}
-
-          {mission.launch_success && <li>Launch sucess : yes</li> }
-          {mission.launch_success === false && <li>Launch sucess : no</li> }
-          {mission.launch_success === null && <li>Launch sucess : Pending</li> }
+          {mission.launch_success && (
+          <li>
+            <span>Launch sucess:</span>
+            {' '}
+            yes
+          </li>
+          ) }
+          {mission.launch_success === false && (
+          <li>
+            <span>Launch sucess:</span>
+            {' '}
+            no
+          </li>
+          ) }
+          {mission.launch_success === null && (
+          <li>
+            <span>Launch sucess:</span>
+            {' '}
+            Pending
+          </li>
+          ) }
 
           {mission.launch_failure_details && (
           <li>
-            Reasons of failure:
+            <span>Reasons of failure:</span>
             {mission.launch_failure_details.reason}
           </li>
           ) }
 
           {mission.links && (
           <li>
-            More information:
+            <span>More information:</span>
             <a target="_blank" rel="noopener noreferrer" href={mission.links.wikipedia}>{mission.links.wikipedia}</a>
           </li>
           )}

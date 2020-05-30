@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap');
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: cornflowerblue;
+    padding-bottom: 10px;
 }
 
 .logo-div {
@@ -23,12 +25,10 @@ header {
 
 }
 
-
-.route-div a p:visited {
-    color:white;
-    font-size: 1.5em;
-    
+.route-div {
+    display:flex;
 }
+
 .route-div a{
     color:aliceblue;
     text-decoration-line:none ;
@@ -37,6 +37,16 @@ header {
 .route-div a p {
     margin-right: 1em;
     color:white;
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-decoration-line: none;
+    font-family: 'Muli', sans-serif;  
+    font-weight: bold;
+    letter-spacing: 1px;
+
 }
+
+.route-div a p:visited {
+    color:white;
+  
+}
+

@@ -1,21 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap');
+
 .filter-div {
     text-align:center;
-    align-items: center;
     display: flex;
-    flex-direction: column;
-    
+    justify-content: space-around;
+    font-family: 'Muli', sans-serif;
+    margin-top:1em;
+    font-size: 1.2em;
+    align-items: center;
 }
 
-.success-div h4 {
-    text-align: center;
+.filter-div .filter-by {
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
-.success-div select {
+.filter-div div select {
     height: 28px;
     border-radius: 5px;
+    font-size: 16px;
 }
 
-.success-div .location {
-    max-width: 119px;
+.filter-div .location-div  select {
+    max-width: 137px;
     overflow: hidden
 }
