@@ -5,20 +5,20 @@
     display: flex;
     justify-content: space-around;
     font-family: 'Muli', sans-serif;
-    margin-top:1em;
-    font-size: 1.5vw;
+    font-size: 1.2em;
     align-items: center;
+    margin: 14px 3px
 }
 
 .filter-div .filter-by {
     font-weight: bold;
-    font-size: 1.6vw;
+    font-size: 1.2em;
 }
 
 .filter-div div select {
-    height: 4vh;
+    height: 33px;
     border-radius: 5px;
-    font-size: 1.4vw;
+    font-size: 0.9em;
     background-color:#dcf5fc;
 }
 
@@ -38,15 +38,21 @@
     }
 
     .filter-div div {
-        width:50%;
+        width:80%;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 3px
+        align-items: center;
+        
+    }
+
+    .filter-div .location-div select {
+        max-width:20vw;
     }
 
     .filter-div div select {
         width: 20vw;
-        height: 4vh
+        height: 26px;
+        margin: 5px;
     }
 }
 

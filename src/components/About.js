@@ -1,7 +1,5 @@
 import React from 'react';
 import './About.css';
-import Footer from './Footer';
-
 
 const About = () => (
 
@@ -39,7 +37,6 @@ const About = () => (
       <li>Wikipedia article describing the details of the mission</li>
       <li>Youtube video about the launching</li>
     </ul>
-    <Footer />
   </div>
 
 );

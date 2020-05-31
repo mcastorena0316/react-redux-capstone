@@ -7,7 +7,6 @@ import {
 import { fetchData, filterSuccess } from '../actions/index';
 import './MissionList.css';
 import LaunchFilter from '../components/LaunchFilter';
-import Footer from '../components/Footer';
 
 let targetId;
 
@@ -108,7 +107,6 @@ class MissionList extends Component {
             </li>
           ))}
         </ul>
-        <Footer />
       </div>
     );
   }
