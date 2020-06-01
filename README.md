@@ -1,16 +1,15 @@
 # React-Redux Project: Build a Catalog
 
-<div align="center">
- <img src="https://i.ibb.co/WvPzK3t/logo.png" alt="logo" />
-<h2 style="color: rgb(243, 190, 44)">SpaceX Launch Missions</h2>
- </div>
-
+<div align="center" style="display: flex; justify-content: center; align-items: center;">
+ <img src="https://i.ibb.co/WvPzK3t/logo.png" alt="logo" style="height: 80px; width: 80px;">
+  <h2 style="color: rgb(243, 190, 44);font-size: 40px;"> SpaceX Launch Missions </h2>
+</div>
 
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-* [The Catalog](#the-game)
-  * [Instalation](#instalation)
+* [The Catalog](#the-catalog)
+  * [Installation](#installation)
 * [Video Presentation](#video-presentation)
 * [Tecnologies used](#tecnologies-used)
 * [Author](#author)
@@ -32,7 +31,7 @@ Project Link: [React-Redux-Capstone](https://github.com/mcastorena0316/react-red
 
 This catalog includes information about the launches executed by the company SpaceX. On the main page, you can see all the launches released until this day, and you can filter them by year, location of the launch, and if it was successful or not.
 
-<div align="center"><img src="./missions" alt="missions"></div>
+<div align="center"><img src="public/missions.png" alt="missions"></div>
 
 If you want to know more details about each one of them, you can click on the image, and you can see important information about the launch that includes: 
 
@@ -44,7 +43,7 @@ If you want to know more details about each one of them, you can click on the im
 * Wikipedia article describing the details of the mission
 * Youtube video about the launching
 
-<div align="center"><img src="./onemission" alt="onemission"></div>
+<div align="center"><img src="publig/onemission.png" alt="onemission"></div>
 
 <!-- INSTALLATION -->
 ### Installation
@@ -129,9 +128,6 @@ Give a star if you like this project!
 
 * [Microverse](https://www.microverse.org/)
 * [SpaceX](https://www.spacex.com/)
-
-- Assets by: 
-
 * Icon make by [Darius Dan](https://www.flaticon.es/autores/darius-dan) from [https://www.flaticon.com](https://www.flaticon.com)
 
 
