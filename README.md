@@ -77,7 +77,7 @@ You can always use the [live version](https://react-redux-spacex.herokuapp.com/)
 * React
 * Redux
 * Heroku
-* Jest and Enzyme
+* Jest & Enzyme
 * [Space X API](https://api.spacexdata.com/)
 
 <!--AUTHOR -->
