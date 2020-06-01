@@ -1,8 +1,8 @@
-# React-Redux Project: Build a Catalog
+## React-Redux Project: Build a Catalog
 
 <div align="center">
- <img src="https://i.ibb.co/WvPzK3t/logo.png" alt="logo" width="80" height="80">
-  <h2 color= "rgb(243, 190, 44)" font-size= "40"> SpaceX Launch Missions </h2>
+ <img src="https://i.ibb.co/WvPzK3t/logo.png" alt="logo" width="90" height="80">
+  <h1 color= "rgb(243, 190, 44)" font-size= "40"> SpaceX Launch Missions </h1>
 </div>
 
 ## Table of Contents
