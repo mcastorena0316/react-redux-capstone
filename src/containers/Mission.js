@@ -84,7 +84,7 @@ class Mission extends Component {
             )}
             {mission.launch_success && (
             <li>
-              <span>Launch sucess:</span>
+              <span>Launch success:</span>
               {' '}
               yes
             </li>
