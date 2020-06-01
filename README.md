@@ -1,8 +1,8 @@
 # React-Redux Project: Build a Catalog
 
-<div align="center" style="display: flex; justify-content: center; align-items: center;">
- <img src="https://i.ibb.co/WvPzK3t/logo.png" alt="logo" style="height: 80px; width: 80px;">
-  <h2 style="color: rgb(243, 190, 44);font-size: 40px;"> SpaceX Launch Missions </h2>
+<div align="center">
+ <img src="https://i.ibb.co/WvPzK3t/logo.png" alt="logo" width="80" height="80">
+  <h2 color= "rgb(243, 190, 44)" font-size= "40"> SpaceX Launch Missions </h2>
 </div>
 
 ## Table of Contents
@@ -43,7 +43,7 @@ If you want to know more details about each one of them, you can click on the im
 * Wikipedia article describing the details of the mission
 * Youtube video about the launching
 
-<div align="center"><img src="publig/onemission.png" alt="onemission"></div>
+<div align="center"><img src="public/onemission.png" alt="onemission"></div>
 
 <!-- INSTALLATION -->
 ### Installation
