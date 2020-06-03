@@ -22,7 +22,7 @@ describe('test actions', () => {
     store.clearActions();
   });
 
-  it('Should get All Misions from fetchData', () => {
+  test('Should get All Misions from fetchData', () => {
     mock.onGet('/').reply(200, {
       data: [{
         mission_name: 'USCV-1 (NASA Crew Flight 1)',
@@ -49,7 +49,7 @@ describe('test actions', () => {
     }).catch(error => error);
   });
 
-  it('Should render one mission from fetchOneMission', () => {
+  test('Should render one mission from fetchOneMission', () => {
     mock.onGet('/mision/1').reply(200, {
       data: {
         flight_number: 65,
@@ -78,7 +78,7 @@ describe('test actions', () => {
     }).catch(error => error);
   });
 
-  it('Should dispatches the correct action and payload when selectin 2019 filter', () => {
+  test('Should dispatches the correct action and payload when selectin 2019 filter', () => {
     const expectedActions = [
       {
         payload: '2019',

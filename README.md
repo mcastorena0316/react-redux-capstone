@@ -68,7 +68,7 @@ You can always use the [live version](https://react-redux-spacex.herokuapp.com/)
 
 <!-- VIDEO PRESENTATION -->
 ## Video Presentation
-[Link to Video Presentation](https://drive.google.com/file/d/1FjM_2btBqAaO6UN_2znlV3hF1s5q5iam/view)
+[Link to Video Presentation](https://youtu.be/p5QySQZuzq4)
 
 <!-- TECNOLOGIES USED -->
 ## Tecnologies used
