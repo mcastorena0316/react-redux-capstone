@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap');
+
+.filter-div {
+    text-align:center;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.2em;
+    align-items: center;
+    margin: 14px 3px
+}
+
+.filter-div .filter-by {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.filter-div div select {
+    height: 33px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    background-color:#dcf5fc;
+}
+
+.filter-div .location-div  select {
+    max-width: 12vw;
+    overflow: hidden
+}
+
+.year-div select {
+    min-width: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .filter-div {
+        flex-direction: column;
+    }
+
+    .filter-div div {
+        width:84%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .filter-div .location-div select {
+        max-width:20vw;
+    }
+
+    .filter-div div select {
+        width: 20vw;
+        height: 26px;
+        margin: 5px;
+    }
+}
+

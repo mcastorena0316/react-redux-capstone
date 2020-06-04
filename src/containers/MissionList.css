@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap');
+
+.launches-div {
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+.launches-list {
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    padding:0;
+}
+
+.launches-list img {
+    width: 256px;
+    height: 256px;
+}
+
+.launch {
+    flex: 1 0 21%;
+}
+
+.launch-buttondiv {
+    text-align:center;
+    margin: 12px 0;
+}
+
+.launch-buttondiv a button {
+    background-color: transparent;
+    border: none; 
+    border-radius:10%;
+    padding:10px;
+}
+
+.launch-buttondiv a button:hover {
+    background-color: rgba(1, 27, 53,0.5);
+    cursor:pointer;
+}
+
+.launch-title {
+    text-align: center;
+    font-size: 1.8em;
+    color: rgb(243, 190, 44);
+}

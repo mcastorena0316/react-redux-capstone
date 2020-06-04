@@ -1,0 +1,32 @@
+html, body {
+  height: fit-content;
+}
+
+body {
+  margin:0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body
+{
+margin:0px;
+padding:0px;
+width:100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
