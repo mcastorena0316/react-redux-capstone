@@ -11,10 +11,10 @@
 * [The Catalog](#the-catalog)
   * [Installation](#installation)
 * [Video Presentation](#video-presentation)
-* [Tecnologies used](#tecnologies-used)
+* [Technologies used](#technologies-used)
 * [Author](#author)
 * [Show your Support](#show-your-support)
-* [Acknowledgements](#acknowledgements)
+* [Acknowledgments](#acknowledgments)
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -70,8 +70,8 @@ You can always use the [live version](https://react-redux-spacex.herokuapp.com/)
 ## Video Presentation
 [Link to Video Presentation](https://youtu.be/p5QySQZuzq4)
 
-<!-- TECNOLOGIES USED -->
-## Tecnologies used
+<!-- TECHNOLOGIES USED -->
+## Technologies used
 * Javascript
 * CSS
 * React
@@ -124,11 +124,11 @@ You can always use the [live version](https://react-redux-spacex.herokuapp.com/)
 Give a star if you like this project!
 
 <!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
+## Acknowledgments
 
 * [Microverse](https://www.microverse.org/)
 * [SpaceX](https://www.spacex.com/)
-* Icon make by [Darius Dan](https://www.flaticon.es/autores/darius-dan) from [https://www.flaticon.com](https://www.flaticon.com)
+* Icon made by [Darius Dan](https://www.flaticon.es/autores/darius-dan) from [https://www.flaticon.com](https://www.flaticon.com)
 
 
 
