@@ -13,6 +13,7 @@
 * [Video Presentation](#video-presentation)
 * [Technologies used](#technologies-used)
 * [Author](#author)
+* [Potential Features](#potential-features)
 * [Show your Support](#show-your-support)
 * [Acknowledgments](#acknowledgments)
 
@@ -117,6 +118,12 @@ You can always use the [live version](https://react-redux-spacex.herokuapp.com/)
     </td>
   </tr>
 </table>
+
+<!-- POTENTIAL FEATURES -->
+## Potential features
+
+* Recreate with React Native.
+* Use React Hooks.
 
 <!-- SHOW YOUR SUPPORT -->
 ## Show your Support
